@@ -37,6 +37,7 @@ public class VentanaNueva extends JFrame {
 	 * Create the frame.
 	 */
 	public VentanaNueva() {
+		setTitle("19100236 Eduardo Perez Escobar");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -51,6 +52,7 @@ public class VentanaNueva extends JFrame {
 		JRadioButton rdbtnFemenino = new JRadioButton("Femenino");
 		rdbtnFemenino.setBounds(6, 87, 109, 23);
 		contentPane.add(rdbtnFemenino);
+		
 		ButtonGroup radSexo=new ButtonGroup();
 		radSexo.add(rdbtnFemenino);
 		radSexo.add(rdbtnMasculino);
@@ -60,11 +62,11 @@ public class VentanaNueva extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if(rdbtnMasculino.isSelected())
 				{
-					JOptionPane.showMessageDialog(contentPane, "Confirma, el sexo es"+rdbtnMasculino.getText() );;
+					JOptionPane.showMessageDialog(contentPane, "Confirma, el sexo es "+rdbtnMasculino.getText() );;
 				}
 				if(rdbtnFemenino.isSelected())
 				{
-					JOptionPane.showMessageDialog(contentPane, "Confirma, el sexo es"+rdbtnMasculino.getText() );;
+					JOptionPane.showMessageDialog(contentPane, "Confirma, el sexo es "+rdbtnMasculino.getText() );;
 				}
 			}
 		});
